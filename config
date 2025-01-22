@@ -1,0 +1,59 @@
+{
+"layer": "bottom",
+  "position": "top",
+  "height": 24,
+  "spacing": 5,
+  "modules-left": ["hyprland/workspaces","sway/mode"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["cpu","battery","pulseaudio","clock","tray"],
+   
+    "hyprland/workspaces": {
+        "format": "{name} : {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": "",
+            "active": "",
+            "default": ""
+        },
+        "presistent-workspaces": {
+            "Virtual -1": [1,2,3,4,5,6,7,8,9,10]
+        }
+
+    },
+
+
+
+    "cpu":{
+        "interval": 10,
+        "format": "CPU: {usage}%"
+    },
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 5
+        },
+        "format": "BAT0: {capacity}%",
+        "format-charging": "BAT0: {capacity}% (charging)",
+        "format-plugged": "BAT0: {capacity}% (plugged)",
+    },
+    "clock": {
+        "format": "{:%H:%M %d/%m/%y }"
+    },
+    "pulseaudio": {
+        "format": "{volume}%"
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+}
